@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <a href="about_us.html">About Us</a>
+    <a href="contact_us.html">Contact Us</a>
+    
+    <h1 style="color: cornflowerblue;">Contact Us</h1>
+    <hr/>
+
+    <h2>Locations</h2>
+    <table>
+        <tr>
+            <th>Logo</th>
+            <th>Location</th>
+            <th>Opening Hours</th>
+            <th>Email Address</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="" alt="logo 1"/>
+            </td>
+            <td>Mandeville</td>
+            <td>9AM - 5PM</td>
+            <td>mandevillebranch@preservation.com</td>
+            <td>18767412589</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="" alt="logo 1" />
+            </td>
+            <td>Kingston</td>
+            <td>9AM - 5PM</td>
+            <td>kingstonbranch@preservation.com</td>
+            <td>18767413589</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="" alt="logo 1"/>
+            </td>
+            <td>Montego Bay</td>
+            <td>9AM - 5PM</td>
+            <td>mobaybranch@preservation.com</td>
+            <td>18767418589</td>
+        </tr>
+    </table>
+    <h2>General Inquiries</h2>
+    <form action="confirmation.html">
+        <label for="fullname">Name: *</label><br/>
+        <input required type="text" id="fullname" name="fullname" />
+        <br/><br/>
+        <label for="email">Email Address: *</label><br/>
+        <input required type="email" id="email" name="emailaddress" />
+        <br/><br/>
+        <label>Are you employed?</label><br/>
+        <input type="radio" value="Y" name="employed"/> Yes
+        <input type="radio" value="N" name="employed"/> No
+        <br/><br/>
+        <label for="inquiry">State your inquiry *</label><br/>
+        <textarea required cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
+        <br/><br/>
+        <input type="submit" />
+    </form>
+</body>
+</html>
