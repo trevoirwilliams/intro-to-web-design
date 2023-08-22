@@ -67,9 +67,9 @@
         <article>
             <h2>General Inquiries</h2>
             <!-- HTML form tag. the action attribute navigates to a page after submission. -->
-            <form action="confirmation.html">
+            <form action="confirmation.html" id="contactForm">
                 <label for="fullname">Name: *</label><br/>
-                <input required type="text" id="fullname" name="fullname" />
+                <input required type="text" id="fullname" name="fullname"/>
                 <br/><br/>
                 <label for="email">Email Address: *</label><br/>
                 <input required type="email" id="email" name="emailaddress" />
@@ -82,6 +82,7 @@
                 <textarea required cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
                 <br/><br/>
                 <input type="submit" />
+                <button type="button" onclick="ClearForm()" >Clear</button>
             </form>
         </article>
         
@@ -95,5 +96,6 @@
             <a href="https://www.trevoirwilliams.com" target="_blank">Trevoir Williams Website</a>
     </footer>
 
+    <script src="scripts/site.js"></script>
 </body>
 </html>
