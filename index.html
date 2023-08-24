@@ -2,40 +2,86 @@
 <html>
     <head>
         <title>Home Page</title>
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
         <link rel="stylesheet" href="stylesheets/site.css" />
     </head>
     <body>
         <div id="header">
-            <div id="banner">
+            <div id="banner" class="bg-secondary text-white text-center">
                 <p>Random website notification</p>
             </div>
-            <div id="nav">
-                <!-- Anchor tags used for internal navigation -->
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="contact_us.html">Contact Us</a>
-            </div>
+            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Animal Protection</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="index.html">Home</a>
+                      <a class="nav-link" href="about_us.html">About Us</a>
+                      <a class="nav-link" href="contact_us.html">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </div>
 
-        <div id="main">
+        <div id="main" class="container">
             <!-- Examples of heading tags -->
             <h1>Animal Preservation Centre - Americas</h1>
             <hr/>
-            <h2 class="DifferentLookingText">Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-
-            <!-- Sample iframe embedding YouTube video -->
-            <h2>Preservation Success Story</h2>
+            
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade"  data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/tutle.jpg" class="d-block w-100" alt="Turtles">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/sharks.jpg" class="d-block w-100" alt="Sharks">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/parrot.jpg" class="d-block w-100" alt="Parrot">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/eagle.jpg" class="d-block w-100" alt="eagle">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/leopard.jpg" class="d-block w-100" alt="leopard">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <br/>
+            <br/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis reprehenderit delectus recusandae cum. Minus eaque asperiores autem, quaerat animi magnam, eveniet ea sapiente, eius est velit minima consequatur repudiandae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis reprehenderit delectus recusandae cum. Minus eaque asperiores autem, quaerat animi magnam, eveniet ea sapiente, eius est velit minima consequatur repudiandae!</p>
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col">
+                    <h2>Preservation Success Story</h2>
+                    <!-- Sample iframe embedding YouTube video -->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/CvAqzg7zDsA" title="Jamaican Rock Iguana - Success Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus, ipsa qui excepturi sit praesentium voluptatibus quo veniam sunt soluta. Distinctio dolore voluptatum labore natus adipisci qui, consequuntur voluptas nam.</p>
-            <p class="DifferentLookingText WeirdColor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nisi 
-                fuga aspernatur, fugit quo voluptas quos alias rem quisquam voluptate voluptatem aut ipsa, repellendus deserunt nesciunt! Sunt facere est deserunt?
-            </p>
-            <!-- Embedding video and audio -->
+                </div>
+                <div class="col">
+                    <!-- Embedding video and audio -->
             <h2>Cayman Brac - Rock Iguana</h2>
             <video width="560" height="315" controls>
                 <source src="videos/brac_iguana.MP4" type="video/mp4" />
@@ -48,23 +94,37 @@
                 <source src="music/song.mp3" type="audio/mpeg" />
             Your browser does not support the video
             </audio>
+                </div>
+            </div>
+            
             <br/>
-            <br/>
-            <br/>
-            <button id="jqueryBtn">Hide P Tags - Jquery</button>
-            <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
-
+            <div class="text-center">
+                <button class="btn btn-danger btn-lg" id="jqueryBtn">Hide P Tags - Jquery</button>
+                <button class="btn btn-outline-danger btn-lg" onclick="hidePTags()">Hide P Tags - JavaScript</button>
+            </div>
         </div>
-
-        <div id="footer">
-            <br/><br/>
-            <a href="https://www.amazon.com">Amazon</a>
-    
-            <a href="https://www.ebay.com" target="_blank">eBay</a>
-            <a href="https://www.trevoirwilliams.com" target="_blank">Trevoir Williams Website</a>
-        </div>
+        
+        <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-body-secondary">About Us</a>
+                </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a>
+              </li>
+            </ul>
+            <p class="text-center text-body-secondary">&copy; 
+                <a href="https://www.trevoirwilliams.com" target="_blank" class="nav-link">
+                    Trevoir Williams Website
+                </a>
+            </p>
+        </footer>
 
         <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
         <script src="scripts/site.js"></script>
         <script>
             
